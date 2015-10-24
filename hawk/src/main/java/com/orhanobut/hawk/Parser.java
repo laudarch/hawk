@@ -2,13 +2,10 @@ package com.orhanobut.hawk;
 
 import java.lang.reflect.Type;
 
-/**
- * @author Orhan Obut
- */
-interface Parser {
+public interface Parser {
 
-    <T> T fromJson(String content, Type type) throws Exception;
+  <T> T fromJson(String content, Type type) throws Exception;
 
-    String toJson(Object body);
-    
+  String toJson(Object body);
+
 }
